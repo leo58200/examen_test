@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.Date;
 
 import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 public class ReservationTest {
 
@@ -43,7 +45,8 @@ public class ReservationTest {
 		assertFalse();
 	}
 	
-	@Test
+	@ParameterizedTest
+	@ValueSource()
 	public void testReservationParametre() {
 		// ?????
 	}
